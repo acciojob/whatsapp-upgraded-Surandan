@@ -8,6 +8,12 @@ public class Message {
     private Date timestamp;
     private User sender;
 
+    public Message(int id, String content, Date timestamp) {
+        this.id = id;
+        this.content = content;
+        this.timestamp = timestamp;
+    }
+
     public Message(int id, String content, Date timestamp, User sender) {
         this.id = id;
         this.content = content;

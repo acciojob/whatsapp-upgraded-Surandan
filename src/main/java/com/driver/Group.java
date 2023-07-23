@@ -12,7 +12,12 @@ public class Group {
     public Group() {
     }
 
-    public Group(String name, int numberOfParticipants, List<User> users, int msgCnt,User admin) {
+    public Group(String name, int numberOfParticipants) {
+        this.name = name;
+        this.numberOfParticipants = numberOfParticipants;
+    }
+
+    public Group(String name, int numberOfParticipants, List<User> users, int msgCnt, User admin) {
         this.name = name;
         this.numberOfParticipants = numberOfParticipants;
         this.users = users;

@@ -8,6 +8,11 @@ public class User {
     public User() {
     }
 
+    public User(String name, String mobile) {
+        this.name = name;
+        this.mobile = mobile;
+    }
+
     public User(String name, String mobile, int msgSent) {
         this.name = name;
         this.mobile = mobile;
