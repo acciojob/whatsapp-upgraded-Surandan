@@ -6,11 +6,13 @@ public class Message {
     private int id;
     private String content;
     private Date timestamp;
+    private User sender;
 
-    public Message(int id, String content, Date timestamp) {
+    public Message(int id, String content, Date timestamp, User sender) {
         this.id = id;
         this.content = content;
         this.timestamp = timestamp;
+        this.sender = sender;
     }
 
     public Message() {
@@ -38,5 +40,13 @@ public class Message {
 
     public void setTimestamp(Date timestamp) {
         this.timestamp = timestamp;
+    }
+
+    public User getSender() {
+        return sender;
+    }
+
+    public void setSender(User sender) {
+        this.sender = sender;
     }
 }
